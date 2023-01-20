@@ -1,7 +1,7 @@
 body {
-    color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
-    font-family: var(--font-family-basic);
+    color: $gray-text-color;
+    background-color: $fon-lemon-color;
+    font-family: Montserrat;
 }
 
 /* Глобальне скидання стилів по тегам*/
@@ -20,27 +20,24 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
-       padding-top: 94px;
-       padding-bottom: 94px; 
-    }
+    
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 85px;
+    padding-right: 85px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 480px) {
-       width: 480px; 
+    @media screen and (min-width: 414px) {
+       width: 414px; 
     }
 
-    @media screen and (min-width: 768px) {
-       width: 768px; 
+    @media screen and (min-width: 1024px) {
+       width: 1024px; 
     }
 
-    @media screen and (min-width: 1200px) {
-       width: 1200px; 
+    @media screen and (min-width: 1280px) {
+       width: 1280px; 
     }
 }

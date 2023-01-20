@@ -1,8 +1,8 @@
 @charset "UTF-8";
 body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-  font-family: var(--font-family-basic);
+  color: #7A7A7A;
+  background-color: #FFFDEE;
+  font-family: Montserrat;
 }
 
 /* Глобальне скидання стилів по тегам*/
@@ -21,32 +21,26 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 85px;
+  padding-right: 85px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 414px) {
   .container {
-    width: 480px;
+    width: 414px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container {
-    width: 768px;
+    width: 1024px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
+    width: 1280px;
   }
 }
 
