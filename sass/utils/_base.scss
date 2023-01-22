@@ -1,7 +1,7 @@
 body {
     color: $gray-text-color;
     background-color: $fon-lemon-color;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Глобальне скидання стилів по тегам*/
@@ -16,26 +16,63 @@ img {
   height: auto;
 }
 
-.section {
-    padding-top: 0px;
-    padding-bottom: 0px;
+// ul, ol
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+// li
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    border: 0;
 }
 
 .container {
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: 414px) {
-       width: 414px; 
+       max-width: 414px; 
     }
 
     @media screen and (min-width: 1024px) {
-       width: 1024px; 
+       max-width: 1024px; 
+       padding-left: 47px;
+       padding-right: 47px;
     }
 
     @media screen and (min-width: 1280px) {
-       width: 1280px; 
+       max-width: 1280px;
+       padding-left: 85px;
+       padding-right: 85px; 
     }
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
