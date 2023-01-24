@@ -1,8 +1,12 @@
 @import "./utils/variables";
 @import "./utils/base";
-@import "./fonts";
+@import "./utils/fonts";
+@import "./utils/button-copy";
+@import "./utils/mixins-copy";
 
 @import "./components/index-section";
+@import "./components/swiper";
+@import "./components/arrow";
 
 
 

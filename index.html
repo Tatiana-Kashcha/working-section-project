@@ -18,13 +18,51 @@
 <body>
 
     <main>
-        <!-- Секція "Details of our restaurant " -->
-        <section class="homepage-details-rest">
-            <h2 class="homepage-details-rest__title">Ресторан</h2>
-            <button data-modal-open class="homepage-details-rest__btn" type="button">Забронювати столик</button>  
-        </section>
+        <!-- Секція "Details of our restaurant" -->
+        <section class="section-details-rest">
+            <div class="container container--details-rest">
+                <p class="name-rest">Mimiho</p>
 
+                <h2 class="details-rest__title">Ресторан</h2>
+
+                <p class="details-rest__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                    Velit officia consequat duis enim velit mollit.
+                </p>
+
+                <button class="details-rest__btn-reserv" type="button">Забронювати столик</button>  
+                <button class="details-rest__btn-menu" type="button">Переглянути меню</button> 
+
+                <!-- <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div> -->
+            </div>
+
+        </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 
 </body>
 </html>

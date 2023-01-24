@@ -1,3 +1,104 @@
 
-/* Секція своя */
+/* Секція Details of our restaurant */
 
+.section-details-rest {
+    padding-top: 48px;
+    padding-bottom: 94px;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.65), 
+    rgba(0, 0, 0, 0.65)),
+    url("../images/homepage-details-rest-main-desktop-@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    // &--overlay {
+    //     max-width: 100%;
+    //     height: auto;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     background-image: linear-gradient(to right,
+    //     rgba(0, 0, 0, 0.65), 
+    //     rgba(0, 0, 0, 0.65)),
+    //     url("../images/homepage-details-rest-main-desktop-@1x.jpg");
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;
+    // }
+        
+}
+
+.container--details-rest{
+    position: relative;
+}
+
+.name-rest{
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.078;
+    letter-spacing: 0.3em;
+    color: $white-color;
+
+    margin-bottom: 16px;
+}
+
+.details-rest__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $white-color;
+
+    margin-bottom: 8px;
+}
+
+.details-rest__text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #BABABA;
+    max-width: 610px;
+
+    margin-bottom: 200px;
+}
+
+.details-rest__btn-reserv {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: transparent;
+
+    width: 236px;
+    height: 48px;
+
+    border: 2px solid $white-color;
+    border-radius: 25px;
+    background-color: $black-color;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: $accent-yellow-color;
+
+    @include transition(background-color, border-color);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-yellow-color;
+        background-color: $white-color;
+    }
+}
