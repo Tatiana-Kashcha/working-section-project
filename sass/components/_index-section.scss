@@ -6,37 +6,37 @@
     padding-bottom: 94px;
     background-color: rgba(0, 0, 0, 0.65);
 
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-    rgba(0, 0, 0, 0.65), 
-    rgba(0, 0, 0, 0.65)),
-    url("../images/homepage-details-rest-main-desktop-@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // max-width: 100%;
+    // height: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    // background-image: linear-gradient(to right,
+    // rgba(0, 0, 0, 0.65), 
+    // rgba(0, 0, 0, 0.65)),
+    // url("../images/homepage-details-rest-main-desktop-@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
     
-    // &--overlay {
-    //     max-width: 100%;
-    //     height: auto;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     background-image: linear-gradient(to right,
-    //     rgba(0, 0, 0, 0.65), 
-    //     rgba(0, 0, 0, 0.65)),
-    //     url("../images/homepage-details-rest-main-desktop-@1x.jpg");
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     background-size: cover;
-    // }
+    &--overlay {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)),
+        url("../images/homepage-details-rest-main-desktop-@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
         
 }
 
-.container--details-rest{
-    position: relative;
-}
+// .container--details-rest{
+//     position: relative;
+// }
 
 .name-rest{
     font-family: 'Film P3';
@@ -46,6 +46,7 @@
     line-height: 1.078;
     letter-spacing: 0.3em;
     color: $white-color;
+    text-transform: uppercase;
 
     margin-bottom: 16px;
 }
@@ -85,7 +86,7 @@
 
     border: 2px solid $white-color;
     border-radius: 25px;
-    background-color: $black-color;
+    background-color: $bg-btn-transparent;
 
     font-family: 'Montserrat';
     font-weight: 700;
@@ -94,11 +95,44 @@
     letter-spacing: 0.02em;
     color: $accent-yellow-color;
 
-    @include transition(background-color, border-color);
-
+    transition: 
+    border-color 250ms $cubic-bezier,
+    background-color 250ms $cubic-bezier;
+    
     &:hover,
     &:focus {
         border-color: $accent-yellow-color;
         background-color: $white-color;
     }
 }
+
+// Кнопки-посилання
+.details-rest__btn-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    width: 236px;
+    height: 48px;
+    border: 2px solid $white-color;
+    border-radius: 25px;
+    background-color: $bg-btn-transparent;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: $accent-yellow-color;
+
+  transition: 
+    border-color 250ms $cubic-bezier,
+    background-color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-yellow-color;
+    background-color: $white-color;
+  }
+}
+
