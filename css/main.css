@@ -243,7 +243,6 @@ button {
 
 /* Секція Details of our restaurant */
 .details-rest {
-  text-align: center;
   padding-top: 24px;
   padding-bottom: 40px;
 }
@@ -293,8 +292,10 @@ button {
 }
 
 .details-rest__card {
+  margin-right: 0;
   margin-left: auto;
-  margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 200px;
 }
 
@@ -339,6 +340,7 @@ button {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #BABABA;
+  text-align: start;
   max-width: 259px;
   margin-bottom: 48px;
 }
