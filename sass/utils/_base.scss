@@ -17,10 +17,10 @@ img {
 }
 
 // ul, ol
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
+// .link {
+//   text-decoration: none;
+//   color: currentColor;
+// }
 
 // li
 .list {
@@ -31,6 +31,8 @@ img {
 
 a {
     display: inline-block;
+    text-decoration: none;
+    color: currentColor;
 }
 
 address {

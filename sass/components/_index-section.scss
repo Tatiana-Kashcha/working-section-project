@@ -1,138 +1,158 @@
 
 /* Секція Details of our restaurant */
 
-.section-details-rest {
-    padding-top: 48px;
-    padding-bottom: 94px;
-    background-color: rgba(0, 0, 0, 0.65);
-
-    // max-width: 100%;
-    // height: auto;
-    // margin-left: auto;
-    // margin-right: auto;
-    // background-image: linear-gradient(to right,
-    // rgba(0, 0, 0, 0.65), 
-    // rgba(0, 0, 0, 0.65)),
-    // url("../images/homepage-details-rest-main-desktop-@1x.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
+.details-rest {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 40px;
     
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 48px;
+      padding-bottom: 96px
+    }
+
     &--overlay {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        max-width: 414px;
         margin-left: auto;
         margin-right: auto;
-        background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.65), 
-        rgba(0, 0, 0, 0.65)),
-        url("../images/homepage-details-rest-main-desktop-@1x.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }
+        background-color: rgba(0, 0, 0, 0.65);
+
+        background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)),
+        url("../images/homepage-details-rest-main-mobile-@1x.jpg");
         
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65), 
+            rgba(0, 0, 0, 0.65)), 
+            url("../images/homepage-details-rest-main-mobile-@2x.jpg");
+        } 
+
+        @media screen and (min-width: 1024px) {
+            max-width: 1024px;
+            background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../images/homepage-details-rest-main-tablet-@1x.jpg');
+
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url('../images/homepage-details-rest-main-tablet-@2x.jpg');
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+            background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../images/homepage-details-rest-main-desktop-@1x.jpg');
+
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url('../images/homepage-details-rest-main-desktop-@2x.jpg'); 
+            }
+        }
+
+    }     
+}
+
+.details-rest__card {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 200px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-items: flex-start;
 }
 
 // .container--details-rest{
 //     position: relative;
 // }
 
-.name-rest{
+.details-rest__name {
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 1.078;
+    font-size: 40px;
+    line-height: 1.075;
     letter-spacing: 0.3em;
     color: $white-color;
-    text-transform: uppercase;
 
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        line-height: 1.078;
+        margin-bottom: 16px;
+    }
 }
 
 .details-rest__title {
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: $white-color;
 
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
 }
 
 .details-rest__text{
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #BABABA;
-    max-width: 610px;
+    
+    max-width: 259px;
+    margin-bottom: 48px;
 
-    margin-bottom: 200px;
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        max-width: 610px;
+
+        margin-bottom: 40px;
+    }
+
 }
 
-.details-rest__btn-reserv {
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    background-color: transparent;
+.details-rest__btn {
+    display: flex;
+    flex-wrap: wrap;
 
-    width: 236px;
-    height: 48px;
-
-    border: 2px solid $white-color;
-    border-radius: 25px;
-    background-color: $bg-btn-transparent;
-
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.02em;
-    color: $accent-yellow-color;
-
-    transition: 
-    border-color 250ms $cubic-bezier,
-    background-color 250ms $cubic-bezier;
-    
-    &:hover,
-    &:focus {
-        border-color: $accent-yellow-color;
-        background-color: $white-color;
+    @media screen and (max-width: 1023px) {
+        justify-content: center;
     }
 }
 
-// Кнопки-посилання
-.details-rest__btn-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.details-rest__btn-modal-open {
     margin-bottom: 16px;
-    width: 236px;
-    height: 48px;
-    border: 2px solid $white-color;
-    border-radius: 25px;
-    background-color: $bg-btn-transparent;
-
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.02em;
-    color: $accent-yellow-color;
-
-  transition: 
-    border-color 250ms $cubic-bezier,
-    background-color 250ms $cubic-bezier;
-
-  &:hover,
-  &:focus {
-    border-color: $accent-yellow-color;
-    background-color: $white-color;
-  }
 }
 
+.details-rest__btn-link {
+ margin-bottom: 0;
+}
