@@ -17,6 +17,11 @@ img {
   height: auto;
 }
 
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -292,11 +297,8 @@ button {
 }
 
 .details-rest__card {
-  margin-right: 0;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 200px;
+  margin-left: 140px;
+  margin-bottom: 48px;
 }
 
 .details-rest__name {
@@ -342,7 +344,6 @@ button {
   color: #BABABA;
   text-align: start;
   max-width: 259px;
-  margin-bottom: 48px;
 }
 @media screen and (min-width: 1024px) {
   .details-rest__text {
@@ -350,6 +351,34 @@ button {
     max-width: 610px;
     margin-bottom: 40px;
   }
+}
+
+.details-rest__thumb {
+  display: flex;
+  background-color: transparent;
+  margin-left: 40px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.details-rest__item-thumb {
+  max-width: 100%;
+  background-color: #dadada;
+  margin-right: 20px;
+}
+
+.details-rest__arrow {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 32px;
+}
+
+.details-rest__item-arrow {
+  background-color: inherit;
+}
+
+.details-rest__item-arrow:not(:last-child) {
+  margin-right: 32px;
 }
 
 .details-rest__btn {
