@@ -5,9 +5,8 @@
     padding-top: 24px;
     padding-bottom: 40px;
 
-    position: relative;
+    overflow: hidden;
     
-
     @media screen and (min-width: 1024px) {
       padding-top: 48px;
       padding-bottom: 96px
@@ -76,8 +75,7 @@
 
 .details-rest__card {
     margin-left: 125px;
-    // margin-bottom: 48px;
-    margin-bottom: 334px;
+    margin-bottom: 48px;
 
     @media screen and (min-width: 1024px) {
         margin-left: 231px;
@@ -150,47 +148,51 @@
     background-color: transparent;
     margin-left: 25px;
     margin-bottom: 16px;
-    // 
-    position: absolute;
-    top: 50%;
-    right: 50%;
 
+    @media screen and (max-width: 414px) {
+        transform: translateX(50%);
+    }
+
+    
     @media screen and (min-width: 1024px) {
-        // margin-left: 312px;
+        margin-left: 312px;
         margin-bottom: 24px;
     }
 
     @media screen and (min-width: 1280px) {
-        // margin-left: 353px;
+        margin-left: 353px;
     }
 }
 
 
 .details-rest__item-thumb {
-    // max-width: 100%;
     background-color: $img-background-color;
     margin-right: 20px;
-    
-    // max-height: 100%;
-        
-    display: flex;
-    
-        // flex-direction: column;
     
 }
 
 .details-rest__btn-arrow {
     display: flex;
+    margin-left: 25px;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 312px;
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 353px;
+    }
 }
 
 .details-rest__arrow {
-    width: 32px;
-    height: 32px;
+    background-color: transparent;
     border: none;
-    background-color: $bg-btn-transparent;
     color: $white-color;
     cursor: pointer;
+
+    padding: 0;
 
     display: flex;
     justify-content: center;
@@ -198,7 +200,6 @@
 }
 
 .details-rest__arrow--left {
-    margin-left: 25px;
     margin-right: 32px;
 }
 
