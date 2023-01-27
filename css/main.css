@@ -250,6 +250,7 @@ button {
 .details-rest {
   padding-top: 24px;
   padding-bottom: 40px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .details-rest {
@@ -298,7 +299,7 @@ button {
 
 .details-rest__card {
   margin-left: 125px;
-  margin-bottom: 48px;
+  margin-bottom: 334px;
 }
 @media screen and (min-width: 1024px) {
   .details-rest__card {
@@ -369,7 +370,9 @@ button {
   background-color: transparent;
   margin-left: 25px;
   margin-bottom: 16px;
-  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  right: 50%;
 }
 @media screen and (min-width: 1024px) {
   .details-rest__thumb {
