@@ -297,8 +297,19 @@ button {
 }
 
 .details-rest__card {
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 48px;
+}
+@media screen and (min-width: 1024px) {
+  .details-rest__card {
+    margin-left: 231px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-rest__card {
+    margin-left: 253px;
+  }
 }
 
 .details-rest__name {
@@ -356,25 +367,37 @@ button {
 .details-rest__thumb {
   display: flex;
   background-color: transparent;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-bottom: 16px;
   overflow: hidden;
 }
-
+@media screen and (min-width: 1024px) {
+  .details-rest__thumb {
+    margin-bottom: 24px;
+  }
+}
 .details-rest__item-thumb {
-  max-width: 100%;
   background-color: #dadada;
   margin-right: 20px;
+  display: flex;
 }
 
-.details-rest__arrow {
+.details-rest__arrow-left {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  cursor: pointer;
   display: flex;
-  margin-left: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
   margin-bottom: 32px;
 }
 
-.details-rest__item-arrow {
-  background-color: inherit;
+.details-rest__icon-arrow {
+  fill: currentColor;
 }
 
 .details-rest__item-arrow:not(:last-child) {
@@ -388,6 +411,11 @@ button {
 @media screen and (max-width: 1023px) {
   .details-rest__btn {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .details-rest__btn {
+    display: block;
   }
 }
 

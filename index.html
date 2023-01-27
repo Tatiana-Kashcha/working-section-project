@@ -35,22 +35,6 @@
                 
                 <ul class="list details-rest__thumb">
                     <li class="details-rest__item-thumb">
-                        <!-- <picture>
-                            <source media="(min-width: 1280px)" srcset="./images/homepage-details-rest-slide1-desktop-@1x.jpg 1x, ./images/homepage-details-rest-slide1-desktop-@2x.jpg 2x">
-                            <source media="(min-width: 1024px)" srcset="./images/homepage-details-rest-slide1-tablet-@1x.jpg 1x, ./images/homepage-details-rest-slide1-tablet-@2x.jpg 2x">
-                            <source media="(max-width: 414px)" srcset="./images/homepage-details-rest-slide1-mobile-@1x.jpg 1x, ./images/homepage-details-rest-slide1-mobile-@2x.jpg 2x">
-                            <img src="./images/homepage-details-rest-slide1-mobile-@1x.jpg" alt="Фото страви 1 ресторану" width="100%">
-                        </picture> -->
-                    </li>
-                    <li class="details-rest__item-thumb">
-                        <!-- <picture>
-                            <source media="(min-width: 1280px)" srcset="./images/homepage-details-rest-slide1-desktop-@1x.jpg 1x, ./images/homepage-details-rest-slide1-desktop-@2x.jpg 2x">
-                            <source media="(min-width: 1024px)" srcset="./images/homepage-details-rest-slide1-tablet-@1x.jpg 1x, ./images/homepage-details-rest-slide1-tablet-@2x.jpg 2x">
-                            <source media="(max-width: 414px)" srcset="./images/homepage-details-rest-slide1-mobile-@1x.jpg 1x, ./images/homepage-details-rest-slide1-mobile-@2x.jpg 2x">
-                            <img src="./images/homepage-details-rest-slide1-mobile-@1x.jpg" alt="Фото страви 1 ресторану" width="100%">
-                        </picture> -->
-                    </li>
-                    <li class="details-rest__item-thumb">
                         <picture>
                             <source media="(min-width: 1280px)" srcset="./images/homepage-details-rest-slide1-desktop-@1x.jpg 1x, ./images/homepage-details-rest-slide1-desktop-@2x.jpg 2x">
                             <source media="(min-width: 1024px)" srcset="./images/homepage-details-rest-slide1-tablet-@1x.jpg 1x, ./images/homepage-details-rest-slide1-tablet-@2x.jpg 2x">
@@ -58,24 +42,51 @@
                             <img src="./images/homepage-details-rest-slide1-mobile-@1x.jpg" alt="Фото страви 1 ресторану" width="100%">
                         </picture>
                     </li>
+                    <li class="details-rest__item-thumb">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="./images/homepage-details-rest-slide2-desktop-@1x.jpg 1x, ./images/homepage-details-rest-slide2-desktop-@2x.jpg 2x">
+                            <source media="(min-width: 1024px)" srcset="./images/homepage-details-rest-slide2-tablet-@1x.jpg 1x, ./images/homepage-details-rest-slide2-tablet-@2x.jpg 2x">
+                            <source media="(max-width: 414px)" srcset="./images/homepage-details-rest-slide2-tablet-@1x.jpg 1x, ./images/homepage-details-rest-slide2-tablet-@2x.jpg 2x">
+                            <img src="./images/homepage-details-rest-slide2-tablet-@1x.jpg" alt="Фото страви 2 ресторану" width="100%">
+                        </picture>
+                    </li>
+                    <li class="details-rest__item-thumb">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="./images/homepage-details-rest-slide3-desktop-@1x.jpg 1x, ./images/homepage-details-rest-slide3-desktop-@2x.jpg 2x">
+                            <source media="(min-width: 1024px)" srcset="./images/homepage-details-rest-slide3-tablet-@1x.jpg 1x, ./images/homepage-details-rest-slide3-tablet-@2x.jpg 2x">
+                            <source media="(max-width: 414px)" srcset="./images/homepage-details-rest-slide3-tablet-@1x.jpg 1x, ./images/homepage-details-rest-slide3-tablet-@2x.jpg 2x">
+                            <img src="./images/homepage-details-rest-slide3-tablet-@1x.jpg" alt="Фото страви 3 ресторану" width="100%">
+                        </picture>
+                    </li>
                 </ul>
                 
 
-                <ul class="list details-rest__arrow">
-                    <li class="details-rest__item-arrow">
-                        <img src="./images/arrow-left.jpg" alt="Стрілка вліво" width="32px" height="32px">
-                    </li>
-                    <li class="details-rest__item-arrow">
-                        <img src="./images/arrow-right.jpg" alt="Стрілка вправо" width="32px" height="32px">
-                    </li>
-                </ul>
+                <div class="list details-rest__arrow">
+                    <button class="details-rest__arrow-left" type="button" aria-label="Кнопка вліво">
+                        <svg class="details-rest__icon-arrow" width="30" height="17">
+                            <use href="./images/icons.svg#clic-arrow-left"></use>
+                        </svg>
+                    </button>
+                </div>
 
-                
+                <!-- arrow-left 
+                arrow-rght -->
 
                 <div class="details-rest__btn">
-                    <button data-modal-open class="btn btn-modal-open btn-modal-open--transparent details-rest__btn-modal-open" type="button">Забронювати столик</button>
-                    <a class="link btn btn-link btn-link--transparent details-rest__btn-link" href="./index.html">Переглянути меню</a>
+                    <button data-modal="1" class="js-open-modal btn btn-modal-open 
+                        btn-modal-open--transparent details-rest__btn-modal-open" 
+                        type="button">Забронювати столик
+                    </button>
+
+                    <a class="link btn btn-link btn-link--transparent details-rest__btn-link" 
+                        href="./index.html">Переглянути меню
+                    </a>
                 </div>
+
+                <!-- ЗАБРОНЮВАТИ СТОЛИК - data-modal="1",   ЗАБРОНЮВАТИ НОМЕР - data-modal="2", ЦІНИ НА НОМЕР - data-modal="3" -->
+                <!-- class="js-open-modal" -->
+
+                <!-- transform: translateX(-50%) -->
 
                 <!-- <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
