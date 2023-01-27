@@ -382,7 +382,12 @@ button {
   display: flex;
 }
 
-.details-rest__arrow-left {
+.details-rest__btn-arrow {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.details-rest__arrow {
   width: 32px;
   height: 32px;
   border: none;
@@ -392,24 +397,21 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.details-rest__arrow--left {
   margin-left: 25px;
-  margin-bottom: 32px;
+  margin-right: 32px;
 }
 
 .details-rest__icon-arrow {
   fill: currentColor;
 }
 
-.details-rest__item-arrow:not(:last-child) {
-  margin-right: 32px;
-}
-
-.details-rest__btn {
-  display: flex;
-  flex-wrap: wrap;
-}
 @media screen and (max-width: 1023px) {
   .details-rest__btn {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
