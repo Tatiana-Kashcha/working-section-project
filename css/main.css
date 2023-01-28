@@ -299,8 +299,6 @@ button {
 @media screen and (min-width: 1024px) {
   .container--details-rest {
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -315,7 +313,13 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .details-rest__card {
+    margin-left: 231px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-rest__card {
     margin-bottom: 40px;
+    margin-left: 253px;
   }
 }
 
@@ -370,6 +374,30 @@ button {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .details-rest__thumb {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+
+.details-rest__thumb-slide {
+  margin-left: 25px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .details-rest__thumb-slide {
+    margin-left: 29px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-rest__thumb-slide {
+    margin-left: 32px;
+  }
+}
+
 .details-rest__thumb-img {
   display: flex;
   background-color: transparent;
@@ -405,22 +433,6 @@ button {
   }
 }
 
-.details-rest__thumb-slide {
-  margin-left: 25px;
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 1024px) {
-  .details-rest__thumb-slide {
-    margin-left: 29px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-rest__thumb-slide {
-    margin-left: 32px;
-  }
-}
-
 .details-rest__btn-arrow {
   display: flex;
 }
@@ -429,6 +441,7 @@ button {
     margin-bottom: 0;
   }
 }
+
 .details-rest__arrow {
   background-color: transparent;
   border: none;
@@ -458,6 +471,7 @@ button {
 @media screen and (min-width: 1024px) {
   .details-rest__btn {
     display: block;
+    margin-bottom: 54px;
   }
 }
 
