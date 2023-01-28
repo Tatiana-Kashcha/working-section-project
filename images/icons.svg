@@ -28,6 +28,9 @@
 <symbol id="close-cross" viewBox="0 0 32 32">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m27.429 3.428-24 24M3.429 3.428l24 24"/>
 </symbol>
+<symbol id="icon-x1" viewBox="0 0 32 32">
+<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M27.429 3.428l-24 24M3.429 3.428l24 24"></path>
+</symbol>
 
 </defs>
 </svg>

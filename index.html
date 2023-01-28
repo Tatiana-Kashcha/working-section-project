@@ -108,55 +108,57 @@
 
         </section>
     </main>
-    
-            <!-- Modal Table -->
-    <!-- <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a> -->
-    <div class="modal container-modal__table" data-modal="1">
-        <div class="">
+
+            
+                <!-- Modal Table -->
+        <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>       
+        <div class="modal container-modal__table" data-modal="1">
             <button type="button" class="modal_close js-modal-close">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="m20.572 2.571-18 18M2.572 2.571l18 18" />
+                <svg class="icon icon-x1">
+                    <use href="./images/icons.svg#icon-x1"></use>
                 </svg>
             </button>
-            <h2 class="modal-table__title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+            <p class="modal-table__title">ЗАБРОНЮВАТИ СТОЛИК</p>
 
-            <form class="modal-table-form" autocomplete="on">
+            <form class="table-form" autocomplete="on">
+                <div class="table_tablet">
+                    <div class="table_contacts">
+                        <div class="table-name">
+                            <input type="text" class="table-name__input" placeholder="Ваше ім’я" name="name" id="table_name"
+                                minlength="3" maxlength="10" pattern="^[Є-Яа-ї]+$" required>
+                            <label for="table_name" class="table-name__label">На кого забронювати столик?</label>
+                        </div>
 
-                <div class="tablet-table">
-                    <div class="table-name">
-                        <input type="text" class="table-name__input" placeholder="Ваше ім’я" name="name" id="table_name"
-                            minlength="4" maxlength="10" pattern="[A-Za-zА-Яа-яЁё]{4,10}" required>
-                        <label for="table_name" class="table-name__label">На кого забронювати столик?</label>
+                        <div class="table-phone">
+                            <input type="tel" class="table-phone__input" name="tel" id="number-phone"
+                                placeholder="+38 (___) ___-__-__" data-phone-pattern="+38 (___) ___-__-__" maxlength="19"
+                                required>
+                            <label for="number-phone" class="table-phone__label">Номер телефону</label>
+                        </div>
                     </div>
 
-                    <div class="table-number-phone">
-                        <input type="tel" class="table-number-phone__input" name="tel" id="number-phone"
-                            placeholder="+38 (___) ___-__-__" data-phone-pattern="+38 (___) ___-__-__" maxlength="19"
-                            required>
-                        <label for="number-phone" class="table-number-phone__label">Номер телефону</label>
-                    </div>
-
-                    <div class="number-of-people">
-                        <select class="number-of-people__select" name="people" id="people">
-                            <option value="1">1</option>
-                            <option value="2" selected>2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                        <label for="people" class="number-of-people__label">Столик на яку кількість осіб?</label>
-                    </div>
+                    <div class="table-order">
+                        <div class="number-of-people drop-people">
+                            <select class="number-of-people__select" name="people" id="people">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <label for="people" class="number-of-people__label">Столик на яку кількість осіб?</label>
+                        </div>
 
 
-                    <div class="table-date">
-                        <select class="table-date__input" name="date" id="date">
-                            <option value="1">Сьогодні</option>
-                            <option value="2">Завтра</option>
-                            <option value="3">Вибрати дату</option>
-                        </select>
-                        <label class="table-date__label" for="date">На яку дату бронювати?</label>
+                        <div class="table-date drop-date">
+                            <select class="table-date__input" name="date" id="date">
+                                <option value="1">Сьогодні</option>
+                                <option value="2">Завтра</option>
+                                <option value="3">Вибрати дату</option>
+                            </select>
+                            <label class="table-date__label" for="date">На яку дату бронювати?</label>
+                        </div>
                     </div>
                 </div>
 
@@ -164,13 +166,225 @@
 
             </form>
         </div>
-    </div>
 
-    <!-- Подложка под модальным окном -->
-    <div class="overlay-modal js-overlay-modal"></div>
+        <!-- Подложка под модальным окном -->
+        <div class="overlay-modal js-overlay-modal"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const dropPeople = document.querySelector('.drop-people')
+
+                dropPeople.addEventListener('click', () => {
+                    dropPeople.classList.toggle('active')
+                })
+
+                window.addEventListener('click', e => {
+                    const target = e.target
+                    if (!target.closest('.drop-people') && !target.closest('.drop-people')) {
+                        dropPeople.classList.remove('active')
+                    }
+                })
+
+            })
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const dropDate = document.querySelector('.drop-date')
+
+                dropDate.addEventListener('click', () => {
+                    dropDate.classList.toggle('active')
+                })
+
+                window.addEventListener('click', e => {
+                    const target = e.target
+                    if (!target.closest('.drop-date') && !target.closest('.drop-date')) {
+                        dropDate.classList.remove('active')
+                    }
+                })
+
+            })
+        </script>
+
+
+        <!-- Modal Room -->
+        <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>  
+        <div class="modal container-modal__room" data-modal="2">
+            <button type="button" class="modal_close js-modal-close">
+                <svg class="icon icon-x1">
+                    <use href="./images/icons.svg#icon-x1"></use>
+                </svg>
+            </button>
+            <p class="modal-room__title">ЗАБРОНЮВАТИ НОМЕР</p>
+
+            <form class="modal-room-form" autocomplete="on">
+
+                <div class="tablet-room">
+                    <div class="tablet-room__contact">
+                        <div class="room-name">
+                            <input type="text" class="room-name__input" placeholder="Ваше ім’я" name="name" id="room_name"
+                                minlength="3" maxlength="10" pattern="^[Є-Яа-ї]+$" required>
+                            <label for="room_name" class="room-name__label">На кого забронювати номер?</label>
+                        </div>
+
+                        <div class="room-number-phone">
+                            <input type="tel" class="room-number-phone__input" name="tel" id="room-phone"
+                                placeholder="+38 (___) ___-__-__" data-phone-pattern="+38 (___) ___-__-__" maxlength="19"
+                                required>
+                            <label for="room-phone" class="room-number-phone__label">Номер телефону</label>
+                        </div>
+                    </div>
+
+                    <div class="room-of-people drop-room">
+                        <select class="room-of-people__select" name="room" id="room">
+                            <option value="1">Двомісний люкс</option>
+                            <option value="2">Трьохмістний люкс</option>
+                            <option value="3">Двомістний номер</option>
+                        </select>
+                        <label for="room" class="room-of-people__label">Категорія номеру</label>
+                    </div>
+
+                    <div class="room-date">
+                        <div class="room-in-date drop-room-in">
+                            <select class="room-in-date__select" name="room-in-date" id="in-date">
+                                <option value="1">Сьогодні</option>
+                                <option value="2">Завтра</option>
+                                <option value="3">Вибрати дату</option>
+                            </select>
+                            <label class="room-in-date__label" for="in-date">Дата заїзду</label>
+                        </div>
+                        <div class="room-out-date drop-room-out">
+                            <select class="room-out-date__select" name="room-out-date" id="out-date">
+                                <option value="1">Сьогодні</option>
+                                <option value="2">Завтра</option>
+                                <option value="3">Вибрати дату</option>
+                            </select>
+                            <label class="room-out-date__label" for="out-date">Дата виїзду</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-modal-submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+
+            </form>
+        </div>
+
+        <!-- Подложка под модальным окном -->
+        <div class="overlay-modal js-overlay-modal"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const dropRoom = document.querySelector('.drop-room')
+
+                dropRoom.addEventListener('click', () => {
+                    dropRoom.classList.toggle('active')
+                })
+
+                window.addEventListener('click', e => {
+                    const target = e.target
+                    if (!target.closest('.drop-room') && !target.closest('.drop-room')) {
+                        dropRoom.classList.remove('active')
+                    }
+                })
+
+            })
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const dropRoomIn = document.querySelector('.drop-room-in')
+
+                dropRoomIn.addEventListener('click', () => {
+                    dropRoomIn.classList.toggle('active')
+                })
+
+                window.addEventListener('click', e => {
+                    const target = e.target
+                    if (!target.closest('.drop-room-in') && !target.closest('.drop-room-in')) {
+                        dropRoomIn.classList.remove('active')
+                    }
+                })
+
+            })
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const dropRoomOut = document.querySelector('.drop-room-out')
+
+                dropRoomOut.addEventListener('click', () => {
+                    dropRoomOut.classList.toggle('active')
+                })
+
+                window.addEventListener('click', e => {
+                    const target = e.target
+                    if (!target.closest('.drop-room-out') && !target.closest('.drop-room-out')) {
+                        dropRoomOut.classList.remove('active')
+                    }
+                })
+
+            })  
+        </script>
+
+                     <!-- Modal Price -->
+        <a href="#" class="js-open-modal" data-modal="3">Открыть окно 3</a>
+        <div class="modal container-modal__price" data-modal="3">
+            <button type="button" class="modal_close js-modal-close">
+                <svg class="icon icon-x1">
+                    <use href="./images/icons.svg#icon-x1"></use>
+                </svg>
+            </button>
+            <p class="modal-price__title">ЦІНИ НА НОМЕР</p>
+
+            <p class="modal-price__subtitle">Двомісний люкс</p>
+
+            <p class="modal-price__category">Категорія номеру</p>
+
+            <form class="modal-price-form">
+
+                <div class="price-night">
+                    <div class="price-night__box drop-price">
+                        <select class="price-night__select" name="night">
+                            <option value="1000">1</option>
+                            <option value="2000">2</option>
+                            <option value="2500">3</option>
+                        </select>
+                        <label for="people" class="price-night__label">Кількість ночей</label>
+                    </div>
+
+                    <div>
+                        <input class="total-grn" type="number" name="total_grn" value="1000" id="price-total" disabled>
+                        <label for="price-total" class="price-total">грн</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-modal-submit">ЗАБРОНЮВАТИ НОМЕР</button>
+            </form>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const dropPrice = document.querySelector('.drop-price')
+
+                dropPrice.addEventListener('click', () => {
+                    dropPrice.classList.toggle('active')
+                })
+
+                window.addEventListener('click', e => {
+                    const target = e.target
+                    if (!target.closest('.drop-price') && !target.closest('.drop-price')) {
+                        dropPrice.classList.remove('active')
+                    }
+                })
+
+            })
+        </script>
+
     
     <script src="./js/modals.js"></script>
     <script src="./js/mask-phone.js"></script>
+    <script src="./js/price.js"></script>
 
 </body>
 </html>
