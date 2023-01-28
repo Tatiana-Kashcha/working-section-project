@@ -82,16 +82,14 @@
 }
 
 .details-rest__card {
-    margin-left: 125px;
     margin-bottom: 48px;
 
-    @media screen and (min-width: 1024px) {
-        margin-left: 231px;
-        margin-bottom: 40px;
+    @media screen and (max-width: 1023px) {
+        margin-left: 125px;
     }
-
-    @media screen and (min-width: 1280px) {
-        margin-left: 253px;
+    
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 40px;
     }
 }
     
@@ -141,7 +139,6 @@
     
     max-width: 259px;
     
-
     @media screen and (min-width: 1024px) {
         font-size: 16px;
         max-width: 610px;
@@ -152,16 +149,10 @@
 .details-rest__thumb-img {
     display: flex;
     background-color: transparent;
-    margin-left: 25px;
     margin-bottom: 16px;
 
     @media screen and (min-width: 1024px) {
-        margin-left: 29px;
         margin-bottom: 24px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-left: 32px;
     }
 }
 
@@ -187,10 +178,23 @@
 
 }
 
-.details-rest__btn-arrow {
-    display: flex;
+.details-rest__thumb-slide {
     margin-left: 25px;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 29px;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 32px;
+    }
+}
+
+
+.details-rest__btn-arrow {
+    display: flex;
 
     @media screen and (min-width: 1024px) {
         // margin-left: 312px;
