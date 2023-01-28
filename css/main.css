@@ -371,11 +371,6 @@ button {
   margin-left: 25px;
   margin-bottom: 16px;
 }
-@media screen and (max-width: 414px) {
-  .details-rest__thumb {
-    transform: translateX(50%);
-  }
-}
 @media screen and (min-width: 1024px) {
   .details-rest__thumb {
     margin-left: 312px;
@@ -391,6 +386,15 @@ button {
 .details-rest__item-thumb {
   background-color: #dadada;
   margin-right: 20px;
+}
+
+.details-rest__slide {
+  max-width: 274px;
+}
+@media screen and (min-width: 1024px) {
+  .details-rest__slide {
+    max-width: 270px;
+  }
 }
 
 .details-rest__btn-arrow {

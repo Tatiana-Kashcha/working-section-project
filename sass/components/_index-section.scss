@@ -149,11 +149,6 @@
     margin-left: 25px;
     margin-bottom: 16px;
 
-    @media screen and (max-width: 414px) {
-        transform: translateX(50%);
-    }
-
-    
     @media screen and (min-width: 1024px) {
         margin-left: 312px;
         margin-bottom: 24px;
@@ -170,6 +165,17 @@
     margin-right: 20px;
     
 }
+
+.details-rest__slide {
+    max-width: 274px;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 270px;
+    }
+
+}
+
+
 
 .details-rest__btn-arrow {
     display: flex;
