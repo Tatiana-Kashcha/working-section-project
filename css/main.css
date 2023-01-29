@@ -296,13 +296,6 @@ button {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .container--details-rest {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .details-rest__card {
   margin-bottom: 48px;
 }
@@ -376,9 +369,7 @@ button {
 
 @media screen and (min-width: 1024px) {
   .details-rest__thumb {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row-reverse;
+    position: relative;
   }
 }
 
@@ -388,13 +379,14 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .details-rest__thumb-slide {
-    margin-left: 29px;
+    margin-left: 265px;
     margin-bottom: 0;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1280px) {
   .details-rest__thumb-slide {
-    margin-left: 32px;
+    margin-left: 268px;
   }
 }
 
@@ -471,6 +463,9 @@ button {
 @media screen and (min-width: 1024px) {
   .details-rest__btn {
     display: block;
+    position: absolute;
+    bottom: 0;
+    margin-right: 32px;
     margin-bottom: 54px;
   }
 }
@@ -481,6 +476,11 @@ button {
 
 .details-rest__btn-link {
   margin-bottom: 0;
+}
+
+.swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .overlay-modal {
