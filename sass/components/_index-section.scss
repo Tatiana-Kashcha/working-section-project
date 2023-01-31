@@ -216,6 +216,10 @@
     align-items: center;
 }
 
+.details-rest__arrow:hover, .details-rest__arrow:focus {
+    fill: $accent-yellow-color;
+}
+    
 .details-rest__arrow--left {
     margin-right: 32px;
 }
