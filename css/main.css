@@ -446,7 +446,7 @@ button {
 }
 
 .details-rest__arrow:hover, .details-rest__arrow:focus {
-  fill: #F3C653;
+  color: #F3C653;
 }
 
 .details-rest__arrow--left {
@@ -470,7 +470,7 @@ button {
     position: absolute;
     bottom: 0;
     margin-right: 32px;
-    margin-bottom: 54px;
+    bottom: 54px;
   }
 }
 

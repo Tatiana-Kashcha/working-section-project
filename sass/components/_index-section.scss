@@ -217,7 +217,7 @@
 }
 
 .details-rest__arrow:hover, .details-rest__arrow:focus {
-    fill: $accent-yellow-color;
+    color: $accent-yellow-color;
 }
     
 .details-rest__arrow--left {
@@ -241,7 +241,7 @@
         position: absolute;
         bottom: 0;
         margin-right: 32px;
-        margin-bottom: 54px;
+        bottom: 54px;
     }
 }
 
